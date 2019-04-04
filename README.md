@@ -1,2 +1,2 @@
 # minfiShinyl
-A repository about visualizing minfi methylation anayzed data using Shiny web applications services in optimal interactive field
+A GitHub repository about visualizing *minfi* DNA methylation analyzed data using *Shiny* web applications services through an optimal interactive approach
