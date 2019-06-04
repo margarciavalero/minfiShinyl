@@ -65,7 +65,7 @@ MSet.QNorm.filt <- MSet.QNorm.filt[keep,]
 MSet.QNorm.filt <- dropLociWithSnps(MSet.QNorm.filt)
 
 
-#exclude cross-reactive probes and polymorphic probes-> El ususario debe tener este documento! o debe estar subido a alg˙n sitio para que el pipeline lo lea autom·ticamente desde dÛnde sea
+#exclude cross-reactive probes and polymorphic probes-> El ususario debe tener este documento! o debe estar subido a alg√∫n sitio para que el pipeline lo lea autom√°ticamente desde d√≥nde sea
 
 reactive.probes <- read.table(file="C:/Users/alumne/Desktop/TFM/data/shinyApp/reactive_probes.txt")
 
