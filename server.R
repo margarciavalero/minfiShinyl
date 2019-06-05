@@ -123,9 +123,9 @@ shinyServer(function(input, output) {
     
     MSet.QNorm.filt <- dropLociWithSnps(MSet.QNorm.filt)
     
-    #exclude cross-reactive probes and polymorphic probes-> El ususario debe tener este documento! o debe estar subido a algún sitio para que el pipeline lo lea automáticamente desde dónde sea
-    reactprobesDir <- "C:/Users/alumne/Desktop/TFM/data/shinyApp/"
-    reactive.probes <- read.table(file=file.path(reactprobesDir, "reactive_probes.txt"))
+    #exclude cross-reactive probes and polymorphic probes
+    
+    reactive.probes <- readRDS("data/reactive_probes.RDS"))
     
     keep <- !(featureNames(MSet.QNorm.filt) %in% reactive.probes$V1)
     
